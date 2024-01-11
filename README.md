@@ -1,5 +1,4 @@
 # BeautifulSoup  
-[Source](https://realpython.com/beautiful-soup-web-scraper-python/#what-is-web-scraping)  
-Alternative to Web Scraping: APIs
 
-
+Access eduserver and course pages using Python and Selenium.  
+`python3 main.py cn` to access Computer Networks course page for example.

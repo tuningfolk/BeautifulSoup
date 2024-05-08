@@ -2,7 +2,7 @@ import sys
 import os
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(override=True)
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 USERNAME,PASSWORD = os.environ["USERNAME"], os.environ["PASSWORD"]
@@ -22,7 +22,7 @@ driver.get(URL[sys.argv[1]])
     # element = driver.find_elements_by_class_name("btn btn-primary")
 driver.find_element(by=By.ID, value="username").send_keys(USERNAME) 
 driver.find_element(by=By.ID, value="password").send_keys(PASSWORD) 
-
+print(USERNAME,PASSWORD)
 driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
     # print(len(element),element)
 
